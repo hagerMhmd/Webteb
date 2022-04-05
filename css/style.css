@@ -88,23 +88,42 @@ body {
 .surgey-layer:hover {
 	background-color: rgba(0, 0, 0, .5);
 }
-.nervous-system {
+.position{
 	position: absolute;
+    height: 10%;
+	font-size: 1.25rem;
+	color: #00667e;
+}
+.nervous-system {
 	top: -4.5%;
 	right: 15%;
-    height: 100%;
 }
-.nervous-system::after{
+/* .nervous-system::after{
     content: '';
     border: 3px solid #008eb7;
     border-radius: 50%;
-    width: 79px;
-    height: 79px;
+    width: 80px;
+    height: 80px;
     position: absolute;
     top: 4.5%;
-    right: 9.5% !important;
+    right: 8% !important;
     opacity:0;
+	transition: opacity 0.2s;
 }
-.nervous-system:hover .nervous-system::after{
+.nervous-system:hover.nervous-system::after{
     opacity: 1;
+} */
+.immune-system{
+	top: 12.5%;
+	right: 9%;
+}
+.gastrointestinal-tract{
+	top: 28.5%;
+	left: 80%;
+	width: 20%;
+}
+@media screen and (max-width: 992px) {
+	.position{
+		font-size: 0.85rem;
+	}
 }
