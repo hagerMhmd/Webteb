@@ -1,0 +1,110 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+html {
+	direction: rtl;
+}
+body {
+	font-family: 'Amiri', serif;
+	/* font-family: 'Tajawal', sans-serif; */
+}
+/* -------------------------- Nav Start ------------------------------ */
+.navbar-expand-lg {
+	background-color: #29333f !important;
+	/* background-color: #2b5464 !important; */
+}
+.search-bar input {
+	border: none;
+	padding: 0.40rem 0rem;
+	width: 0;
+	text-indent: 10px;
+}
+.search-bar {
+	border-top-left-radius: 50rem;
+	border-bottom-left-radius: 50rem;
+	border-bottom-right-radius: 45rem;
+}
+.search-bar input:focus-visible {
+	outline: none !important;
+}
+.search-bar i {
+	padding: 0.40rem 0 !important;
+	cursor: pointer;
+}
+.search-icon {
+	bottom: 0;
+	top: 0;
+	padding-right: 10px;
+}
+.fa-circle {
+	font-size: 0.5rem !important;
+}
+.ad-container {
+	background-color: rgba(241, 241, 241, .5);
+}
+.corona-color {
+	color: #ff1818;
+	color: #ff1700;
+}
+.title h1 {
+	color: #008eb7;
+	position: relative;
+}
+.title h1::after {
+	content: '';
+	width: 37%;
+	height: 4px;
+	background-color: #d8edef;
+	position: absolute;
+	left: 0px;
+	top: calc(50% - 1.5px);
+}
+.title h1::before {
+	content: '';
+	width: 37%;
+	height: 4px;
+	background-color: #d8edef;
+	position: absolute;
+	right: 0px;
+	top: calc(50% - 1.5px);
+}
+@media screen and (max-width: 992px) {
+	.title h1::after {
+		width: 24%;
+		left: 0px;
+	}
+	.title h1::before {
+		width: 24%;
+		right: 0px;
+	}
+}
+.surgey-layer {
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	background-color: rgba(0, 0, 0, .4);
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+.surgey-layer:hover {
+	background-color: rgba(0, 0, 0, .5);
+}
+.nervous-system {
+	position: absolute;
+	top: -4.5%;
+	right: 15%;
+    height: 100%;
+}
+.nervous-system::after{
+    content: '';
+    border: 3px solid #008eb7;
+    border-radius: 50%;
+    width: 79px;
+    height: 79px;
+    position: absolute;
+    top: 4.5%;
+    right: 9.5% !important;
+    opacity:0;
+}
+.nervous-system:hover .nervous-system::after{
+    opacity: 1;
+}
