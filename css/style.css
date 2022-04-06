@@ -42,9 +42,14 @@ body {
 	background-color: rgba(241, 241, 241, .5);
 }
 .corona-color {
-	color: #ff1818;
 	color: #ff1700;
 }
+.corona-color:hover{
+	color: #ff1700;
+}
+/* -------------------------- Nav End -------------------------- */
+
+/* -------------------------- SUGERY START -------------------- */
 .title h1 {
 	color: #008eb7;
 	position: relative;
@@ -88,12 +93,16 @@ body {
 .surgey-layer:hover {
 	background-color: rgba(0, 0, 0, .5);
 }
+/* --------------------------- SUGERY END ----------------- */
+
+/* --------------------------- BODY START ----------------- */
 .position{
 	position: absolute;
     height: 10%;
 	font-size: 1.25rem;
 	color: #00667e;
 }
+
 .nervous-system {
 	top: -4.5%;
 	right: 15%;
@@ -119,11 +128,53 @@ body {
 }
 .gastrointestinal-tract{
 	top: 28.5%;
-	left: 80%;
-	width: 20%;
+	left: 78%;
+}
+.lymphatic-system{
+	top : 46%;
+	left: 82%;
+}
+.endocrine-system{
+	top: 63%;
+	left: 84%;
+}
+.integumentary-system{
+	top: 81%;
+}
+.circulatory-system{
+	top: 3%;
+	right: 65%;
+}
+.respiratory{
+	top: 20%;
+	right: 78%;
+}
+.urinary-tract{
+	top: 40%;
+	right: 85%;
+}
+.reproductive-system{
+	top: 59%;
+	right: 83%;
+}
+.musculoskeletal-system{
+	top: 78%;
+	right: 70%;
 }
 @media screen and (max-width: 992px) {
 	.position{
-		font-size: 0.85rem;
+		font-size: 0.95rem;
+	}
+	.lymphatic-system{
+		left: 84%;
 	}
 }
+@media screen and (min-width:768px) and (max-width:1200px) {
+	.systems-width{
+		width: 23%;
+	}
+	.musculoskeletal-system{
+		width: 35%;
+	}
+}
+/* --------------------------- BODY END ----------------- */
