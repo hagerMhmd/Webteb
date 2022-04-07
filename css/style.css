@@ -16,7 +16,7 @@ body {
 	border: none;
 	padding: 0.40rem 0rem;
 	width: 0;
-	text-indent: 10px;
+	text-indent: 0.625rem;
 }
 .search-bar {
 	border-top-left-radius: 50rem;
@@ -33,7 +33,7 @@ body {
 .search-icon {
 	bottom: 0;
 	top: 0;
-	padding-right: 10px;
+	padding-right: 0.625rem;
 }
 .fa-circle {
 	font-size: 0.5rem !important;
@@ -57,29 +57,29 @@ body {
 .title h1::after {
 	content: '';
 	width: 37%;
-	height: 4px;
+	height: 0.25rem;
 	background-color: #d8edef;
 	position: absolute;
-	left: 0px;
-	top: calc(50% - 1.5px);
+	left: 0rem;
+	top: calc(50% - 0.09375rem);
 }
 .title h1::before {
 	content: '';
 	width: 37%;
-	height: 4px;
+	height: 0.25rem;
 	background-color: #d8edef;
 	position: absolute;
-	right: 0px;
-	top: calc(50% - 1.5px);
+	right: 0rem;
+	top: calc(50% - 0.09375rem);
 }
 @media screen and (max-width: 992px) {
 	.title h1::after {
 		width: 24%;
-		left: 0px;
+		left: 0rem;
 	}
 	.title h1::before {
 		width: 24%;
-		right: 0px;
+		right: 0rem;
 	}
 }
 .surgey-layer {
@@ -178,3 +178,37 @@ body {
 	}
 }
 /* --------------------------- BODY END ----------------- */
+#lightBoxContainer{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background-color: rgba(0, 0, 0, 0.5);
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: 9;
+}
+#lightBoxItem .container{
+	background-color:  #ccc !important;
+}
+#lightBoxItem h1{
+	color: #008eb7;
+}
+#lightBoxItem p {
+	color: #29333f ;
+}
+#lightBoxItem i {
+	font-size: 20px;
+	cursor: pointer;
+}
+#close {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+.w-fit-content {
+	width: fit-content;
+	/* margin: auto; */
+}
