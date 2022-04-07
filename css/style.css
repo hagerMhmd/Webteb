@@ -1,0 +1,417 @@
+@import url('https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&display=swap');
+html {
+	direction: rtl;
+	
+}
+body {
+	font-family: 'Amiri', serif;
+	/* font-family: 'Tajawal', sans-serif; */
+	
+}
+/* -------------------------- Nav Start ------------------------------ */
+.navbar-expand-lg {
+	background-color: #29333f !important;
+	/* background-color: #2b5464 !important; */
+}
+/* .search-bar input {
+	border: none;
+	padding: 0.40rem 0rem;
+	width: 0;
+	text-indent: 10px;
+}
+.search-bar {
+	border-top-left-radius: 50rem;
+	border-bottom-left-radius: 50rem;
+	border-bottom-right-radius: 45rem;
+}
+.search-bar input:focus-visible {
+	outline: none !important;
+}
+.search-bar i {
+	padding: 0.40rem 0 !important;
+	cursor: pointer;
+}
+.search-icon {
+	bottom: 0;
+	top: 0;
+	padding-right: 10px;
+} */
+
+
+
+/* searchNewCode */
+.home-search {
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	background: #333;
+	z-index: 99999;
+	opacity: 0;
+	visibility: hidden;
+	transition: all 0.3s ease-in;
+  }
+  
+  .home-search form .form-group form {
+	width: 25%;
+  }
+  
+  .home-search form .form-group .form-control.custom {
+	background: transparent;
+	border: none;
+	box-shadow: none;
+	outline: none;
+	margin-right: 2rem;
+  
+  
+  }
+  
+  .home-search #searchClose {
+	position: absolute;
+    top: 17px;
+    right: 15rem;
+    font-size: 28px;
+    color: #fff;
+}
+i#searchOpen {
+    color: white;
+}  
+
+  .home-search form .form-group .form-control.custom::placeholder {
+	color: #fff;
+  }
+
+
+
+
+
+
+/* -------------------------------------------------------------------------- */
+/*                                 shopingCart                                */
+/* -------------------------------------------------------------------------- */
+
+.shopingCart-holder {
+	width: 32%;
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+    opacity: 0;
+    visibility: hidden;
+    top: 34%;
+    transition: all 0.2s ease-in;
+    filter: drop-shadow(2px 4px 6px grey);
+  
+  }
+  
+  .shopingCart-holder.shopingToggle {
+	opacity: 1;
+    visibility: visible;
+    top: 9%;
+    padding: 21px 13px 53px;
+  }
+
+  
+
+
+  
+  button.btn.btn-outline-secondary.shop:hover {
+	transition: all 0.3s ease-in;
+	background: var(--green) !important;
+  }
+  
+  button.btn.btn-outline-secondary.shoptwo {
+	background-color: var(--red);
+	color: white;
+	font-weight: 700;
+  
+  }
+  button#increaseone,button#decreaseone,button#decreasetwo,button#increasetwo {
+    background-color: #16c1f5;
+}
+button.btn.btn-outline-secondary.shop {
+    width: 100%;
+    background-color: #16c1f5;
+    color: white;
+}
+
+  
+  /* -------------------------------------------------------------------------- */
+  /*                            mediaQueryShopingCart                           */
+  /* -------------------------------------------------------------------------- */
+  @media (max-width:768px) {
+	.shopingCart-holder.shopingToggle {
+	  width: 100%;
+	  top: 9%;
+	}
+  
+	.shopingCart-holder::before {
+  
+	  left: 76%;
+	  top: -41px;
+	}
+  }
+  
+  @media (max-width:992px) {
+	.shopingCart-holder.shopingToggle {
+	  width: 100%;
+	  top: 8%;
+	}
+  
+	.shopingCart-holder::before {
+	  left: 83%;
+	}
+  }
+
+
+
+
+  /* -------------------------------------------------------------------------- */
+/*                                  asideHome                                 */
+/* -------------------------------------------------------------------------- */
+
+
+aside.contact-home {
+	background-color: white;
+    width: 33%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: -100%;
+    overflow: auto;
+    filter: drop-shadow(2px 4px 6px black);
+    text-align: center;
+  }
+  
+  .carousel-indicators [data-bs-target] {
+	width: 15px;
+	height: 15px;
+	border-radius: 50% !important;
+  
+  }
+  
+  .carousel-indicators [data-bs-target].active {
+	background-color: #16c1f5 !important;
+  
+  }
+  .carousel-indicators [data-bs-target]{
+	background-color: #9d8e8e !important; 
+  }
+  
+  .contact-home .contact-modern a {
+	display: block;
+	text-decoration: none;
+	color: var(--black);
+	position: relative;
+  
+  
+  }
+  
+  .contact-home .contact-modern a:nth-child(2) {
+	margin-bottom: 2rem;
+  }
+  
+  .contact-home .contact-modern a:nth-child(3) {
+	margin-bottom: 2rem;
+  }
+  
+  .contact-home .contact-modern a:nth-child(2)::before {
+	content: "";
+	position: absolute;
+	background: rgba(126, 124, 124, 0.631);
+	width: 64%;
+	height: 1px;
+	top: 27px;
+  }
+  
+  
+  button.btn.contact-close {}
+  
+  button.btn.contact-close span {
+	background: #16c1f5;
+    height: 0.2rem;
+    width: 1.2rem;
+    display: block;
+    transition: all 0.6s ease-in;
+  
+  
+  }
+  
+  button.btn.contact-close.closeIcon span:nth-child(1) {
+	transform: rotate(47deg);
+  }
+  
+  button.btn.contact-close.closeIcon span:nth-child(2) {
+	transform: rotate(132deg) translate(0px, 4px);
+  
+  }
+  /* -------------------------------------------------------------------------- */
+  /*                            mediaQueryShopingCart                           */
+  /* -------------------------------------------------------------------------- */
+  @media (max-width:992px) {
+	aside.contact-home {
+		background-color: white;
+		width: 46%;
+	
+	}
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+  /* end NewCode */
+
+.fa-circle {
+	font-size: 0.5rem !important;
+}
+.ad-container {
+	background-color: rgba(241, 241, 241, .5);
+}
+.corona-color {
+	color: #ff1700;
+}
+.corona-color:hover{
+	color: #ff1700;
+}
+/* -------------------------- Nav End -------------------------- */
+
+/* -------------------------- SUGERY START -------------------- */
+.title h1 {
+	color: #008eb7;
+	position: relative;
+}
+.title h1::after {
+	content: '';
+	width: 37%;
+	height: 4px;
+	background-color: #d8edef;
+	position: absolute;
+	left: 0px;
+	top: calc(50% - 1.5px);
+}
+.title h1::before {
+	content: '';
+	width: 37%;
+	height: 4px;
+	background-color: #d8edef;
+	position: absolute;
+	right: 0px;
+	top: calc(50% - 1.5px);
+}
+@media screen and (max-width: 992px) {
+	.title h1::after {
+		width: 24%;
+		left: 0px;
+	}
+	.title h1::before {
+		width: 24%;
+		right: 0px;
+	}
+}
+.surgey-layer {
+	width: 100%;
+	height: 100%;
+	top: 0%;
+	background-color: rgba(0, 0, 0, .4);
+	cursor: pointer;
+	transition: background-color 0.3s;
+}
+.surgey-layer:hover {
+	background-color: rgba(0, 0, 0, .5);
+}
+/* --------------------------- SUGERY END ----------------- */
+
+/* --------------------------- BODY START ----------------- */
+.position{
+	position: absolute;
+    height: 10%;
+	font-size: 1.25rem;
+	color: #00667e;
+}
+
+.nervous-system {
+	top: -4.5%;
+	right: 15%;
+}
+/* .nervous-system::after{
+    content: '';
+    border: 3px solid #008eb7;
+    border-radius: 50%;
+    width: 80px;
+    height: 80px;
+    position: absolute;
+    top: 4.5%;
+    right: 8% !important;
+    opacity:0;
+	transition: opacity 0.2s;
+}
+.nervous-system:hover.nervous-system::after{
+    opacity: 1;
+} */
+.immune-system{
+	top: 12.5%;
+	right: 9%;
+}
+.gastrointestinal-tract{
+	top: 28.5%;
+	left: 78%;
+}
+.lymphatic-system{
+	top : 46%;
+	left: 82%;
+}
+.endocrine-system{
+	top: 63%;
+	left: 84%;
+}
+.integumentary-system{
+	top: 81%;
+}
+.circulatory-system{
+	top: 3%;
+	right: 65%;
+}
+.respiratory{
+	top: 20%;
+	right: 78%;
+}
+.urinary-tract{
+	top: 40%;
+	right: 85%;
+}
+.reproductive-system{
+	top: 59%;
+	right: 83%;
+}
+.musculoskeletal-system{
+	top: 78%;
+	right: 70%;
+}
+@media screen and (max-width: 992px) {
+	.position{
+		font-size: 0.95rem;
+	}
+	.lymphatic-system{
+		left: 84%;
+	}
+}
+@media screen and (min-width:768px) and (max-width:1200px) {
+	.systems-width{
+		width: 23%;
+	}
+	.musculoskeletal-system{
+		width: 35%;
+	}
+}
+/* --------------------------- BODY END ----------------- */
