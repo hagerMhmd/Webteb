@@ -210,5 +210,12 @@ body {
 }
 .w-fit-content {
 	width: fit-content;
-	/* margin: auto; */
+}
+#lightBoxItem{
+	width: 65%;
+}
+@media screen and (max-width:576px) {
+	#lightBoxItem{
+		width: 90%;
+	}
 }
