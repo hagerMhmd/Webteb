@@ -224,7 +224,7 @@ body {
 	background-color: #ecf8f8;
 }
 .img-capiton {
-	/* margin-right: -15px; */
+	margin-right: 0px;
 	width: 135px;
 	right: 79px;
 	top: 122px;
@@ -238,13 +238,9 @@ body {
 }
 .imgs {
 	cursor: pointer;
-	/* left: -20% !important ; */
-	/* background-color: #29333f; */
 }
 .imgs:hover {
-	/* padding: 10px; */
 	animation: moving 0.8s ease-in-out;
-	/* transition: all .15s linear; */
 }
 @keyframes moving {
 	100% {
@@ -262,4 +258,54 @@ body {
 	0% {
 		left: 1%;
 	}
+}
+/* -------------------- Infants Start  ----------------------- */
+.infants {
+	cursor: pointer;
+}
+.title h2 {
+	color: #7078c6;
+	font-size: 2.25rem;
+	position: relative;
+	width: fit-content;
+}
+.title h2::after {
+	content: '';
+	width: 9px;
+	height: 9px;
+	background-color: #7078c6;
+	position: absolute;
+	border-radius: 50%;
+	left: -20px;
+	top: 50%;
+}
+.title h2::before {
+	content: '';
+	width: 9px;
+	height: 9px;
+	background-color: #7078c6;
+	position: absolute;
+	border-radius: 50%;
+	right: -20px;
+	top: 50%;
+}
+.infants h4 {
+	bottom: 0px;
+}
+.infants img{
+	border-radius: 15px !important;
+}
+.title-bg {
+	width: 100%;
+	bottom: 0%;
+	top: 70%;
+	background: rgb(2, 0, 36);
+	background: linear-gradient(
+		6deg,
+		rgba(2, 0, 36, 1) 0%,
+		rgba(55, 111, 219, 0.7539390756302521) 53%,
+		rgba(0, 212, 255, 1) 100%
+	);
+	border-bottom-left-radius: 15px !important;
+	border-bottom-right-radius: 15px !important;
 }
