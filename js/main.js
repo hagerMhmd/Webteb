@@ -1,8 +1,9 @@
 let searchIcon = document.querySelector('#searchIcon'),
     iconContainer = document.querySelector('#iconContainer'),
     searchInput = document.querySelector('#searchInput'),
-    Sugery = document.querySelector('#Sugery')
-
+    sugery = document.querySelector('#Sugery'),
+    baby =  document.querySelector('#Baby')
+    console.log(baby);
 searchIcon.addEventListener('click', function () {
     openSearchBar()
 })
@@ -14,10 +15,10 @@ function openSearchBar() {
     searchInput.classList.add('w-100')
     searchInput.style.border = 'solid 1px #ccc'
 }
-Sugery.addEventListener('click', function name() {
+// --------------------------------------- Sugery Start ------------------------------------
+sugery.addEventListener('click', function name() {
     goTo('/sugery.html')
 })
-
 function goTo(URL) {
     window.location.href = URL
 }
@@ -90,11 +91,9 @@ function displayData() {
     console.log(index);
 }
 displayData()
-
 let clickedItem = document.querySelectorAll('.surgey-layer'),
     lightBoxContainer = document.querySelector('#lightBoxContainer'),
     lightBoxItem = document.querySelector('#lightBoxItem')
-
 
 for (let i = 0; i < clickedItem.length; i++) {
     clickedItem[i].addEventListener('click', function (e) {
@@ -127,4 +126,10 @@ lightBoxContainer.addEventListener(`click`, function (e) {
     if (e.target == lightBoxContainer) {
         lightBoxContainer.style.display = 'none'
     }
+})
+// --------------------------------------------- Sugery end ----------------------------------
+
+// -------------------------------------------- baby Start  -----------------------------------
+baby.addEventListener('click', function name() {
+    goTo('/baby.html')
 })
