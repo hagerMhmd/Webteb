@@ -4,8 +4,8 @@ html {
 	direction: rtl;
 }
 body {
-	/* font-family: 'Amiri', serif; */
-	font-family: 'Tajawal', sans-serif;
+	font-family: 'Amiri', serif;
+	/* font-family: 'Tajawal', sans-serif; */
 }
 /* -------------------------- Nav Start ------------------------------ */
 .navbar-expand-lg {
@@ -233,7 +233,7 @@ body {
 	font-size: 1.34rem;
 	line-height: 45px;
 }
-#babySection .col-md-3 {
+#babySection .col-lg-3 {
 	margin: 0px -15px;
 }
 .imgs {
@@ -314,3 +314,10 @@ body {
 	background: #ecf8f8;
 }
 /* ------------------------- Pregnancy end  ------------------------- */
+.styleable-title{
+	font-weight: 900 !important;
+	text-decoration: none !important;
+}
+.styleable-rootcontainer{
+	background-color: #008eb7 !important;
+}

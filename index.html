@@ -56,7 +56,10 @@
                 </ul>
             </div>
             <div class="search-bar ms-3 d-flex position-relative overflow-hidden">
-                <input id="searchInput" type="text" class="end-0" placeholder="ابحث في ويب طب">
+                <!-- <input id="searchInput" type="text" class="end-0" placeholder="ابحث في ويب طب"> -->
+                <form action="/index.html" method="get" role="search">
+                    <input  class="end-0" placeholder="ابحث في ويب طب" type="text" name="q" id="searchInput">
+                </form>
                 <div id="iconContainer" class="search-icon position-static start-0">
                     <i id="searchIcon" class="fa-solid fa-magnifying-glass ms-2 fs-4 rounded-pill text-info"> </i>
                 </div>
@@ -64,12 +67,18 @@
             <img src="imgs/webteb.png" alt="">
         </div>
     </nav>
+    <div class="gcse-searchresults-only"></div>
+    <!-- <div class="gcse-search"></div> -->
+
     <!---------------------------- NAV END ------------------------------->
 
     <!------------ Boostrap script file ------------->
     <script src="js/bootstrap.bundle.min.js"></script>
     <!-- -------------custom JS Link ------------- -->
     <script src="js/main.js"></script>
+    <script src='https://cse.google.com/cse?cx=ae1d14686534a2384'></script>
+    <script async src="https://cse.google.com/cse.js?cx=56732ba7be09005b8"></script>
+    <!-- <div class="gcse-search"></div>     -->
 </body>
 
 </html>
