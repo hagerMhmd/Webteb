@@ -2,8 +2,9 @@ let searchIcon = document.querySelector('#searchIcon'),
     iconContainer = document.querySelector('#iconContainer'),
     searchInput = document.querySelector('#searchInput'),
     sugery = document.querySelector('#Sugery'),
-    baby =  document.querySelector('#Baby')
-    console.log(baby);
+    baby =  document.querySelector('#Baby'),
+    lifeStyle = document.querySelector('#lifeStyle')
+    console.log(lifeStyle);
 searchIcon.addEventListener('click', function () {
     openSearchBar()
 })
@@ -134,4 +135,8 @@ lightBoxContainer.addEventListener(`click`, function (e) {
 
 baby.addEventListener('click', function name() {
     goTo('/baby.html')
+})
+
+lifeStyle.addEventListener('click', function name() {
+    goTo('/lifeStyle.html')
 })
