@@ -314,10 +314,25 @@ body {
 	background: #ecf8f8;
 }
 /* ------------------------- Pregnancy end  ------------------------- */
-.styleable-title{
-	font-weight: 900 !important;
-	text-decoration: none !important;
+
+/* ------------------------ lifeStytle Start -------------------------*/
+.lifeStytle-layer{
+	top: 85%;
+	bottom: 0;
+	left: 0;
+	right: 0;
+    background: rgba(255,255,255,.85);
+	transition: all 0.3s;
 }
-.styleable-rootcontainer{
-	background-color: #008eb7 !important;
+.lifeStytle-layer h3{
+	color: #567272;
 }
+.lifeStyle-items{
+	cursor: pointer;
+	border: 1px solid #44d3a0;
+}
+.lifeStyle-items:hover .lifeStytle-layer{
+	top: 0;
+}
+
+/* ------------------------- lifeStytle End --------------------------*/

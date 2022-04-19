@@ -2,9 +2,12 @@ let searchIcon = document.querySelector('#searchIcon'),
     iconContainer = document.querySelector('#iconContainer'),
     searchInput = document.querySelector('#searchInput'),
     sugery = document.querySelector('#Sugery'),
-    baby =  document.querySelector('#Baby'),
-    lifeStyle = document.querySelector('#lifeStyle')
-    console.log(lifeStyle);
+    baby = document.querySelector('#Baby'),
+    lifeStyle = document.querySelector('#lifeStyle'),
+    lifeStyleRow = document.querySelector('#lifeStyleRow')
+console.log(lifeStyleRow);
+
+
 searchIcon.addEventListener('click', function () {
     openSearchBar()
 })
@@ -91,9 +94,12 @@ function displayData() {
     myRow.innerHTML = container
     console.log(index);
 }
-displayData()
+if (window.location.pathname == '/sugery.html') {
+    displayData()
+}
+console.log(window.location.pathname);
 
-let clickedItem =  Array.from(document.querySelectorAll('.surgey-layer')),
+let clickedItem = Array.from(document.querySelectorAll('.surgey-layer')),
     lightBoxContainer = document.querySelector('#lightBoxContainer'),
     lightBoxItem = document.querySelector('#lightBoxItem')
 
@@ -122,13 +128,15 @@ function closeModal() {
     closeBtn.addEventListener('click', function () {
         lightBoxContainer.style.display = 'none'
     })
-
 }
+if (window.location.pathname == '/sugery.html') {
 lightBoxContainer.addEventListener(`click`, function (e) {
     if (e.target == lightBoxContainer) {
         lightBoxContainer.style.display = 'none'
     }
 })
+}
+
 // --------------------------------------------- Sugery end ----------------------------------
 
 // -------------------------------------------- baby Start  -----------------------------------
@@ -136,7 +144,51 @@ lightBoxContainer.addEventListener(`click`, function (e) {
 baby.addEventListener('click', function name() {
     goTo('/baby.html')
 })
+// -------------------------------------------- baby end    -----------------------------------
 
+// ---------------------------------------- lifeStyle start  ----------------------------------
 lifeStyle.addEventListener('click', function name() {
     goTo('/lifeStyle.html')
 })
+let lifeStyleArray = [
+    {
+        imgSrc: 'imgs/lisestyle.jpg',
+        title: 'جودة الحياة'
+    },
+    {
+        imgSrc: 'imgs/couple.jpg',
+        title: 'الحياة الزوجية'
+    },
+    {
+        imgSrc: 'imgs/eating.jpg',
+        title: 'التغذية السليمة'
+    },
+    {
+        imgSrc: 'imgs/diet.jpg',
+        title: 'تخفيف الوزن'
+    },
+    {
+        imgSrc: 'imgs/beauty.jpg',
+        title: 'البشرة و الجمال'
+    },
+    {
+        imgSrc: 'imgs/hair.jpg',
+        title: 'العناية بالشعر'
+    }
+]
+function displayLifeStyleData() {
+    let container = ``
+    lifeStyleArray.map((info) => container += `  <div class="col-lg-2">
+    <div class="lifeStyle-items position-relative">
+        <img src=${info.imgSrc} class="w-100" alt="">
+        <div class="lifeStytle-layer position-absolute d-flex justify-content-center align-items-center">
+            <h3 class="py-3 px-2">${info.title}</h3>
+        </div>
+    </div>
+</div>`)
+    lifeStyleRow.innerHTML = container
+}
+if(window.location.pathname === '/lifeStyle.html'){
+    displayLifeStyleData()
+}
+// ---------------------------------------- lifeStyle end  ----------------------------------
