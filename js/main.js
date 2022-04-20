@@ -223,5 +223,41 @@ function displayDietData() {
     dietRow.innerHTML = container
 }
 window.location.pathname === '/lifeStyle.html' ? displayDietData() : ''
-
+let skinCareArray = [
+    {
+        imgSrc: 'imgs/bb.jpg',
+        title: 'زيوت لتكبير الثدي'
+    },
+    {
+        imgSrc: 'imgs/skin.jpg',
+        title: 'علاج تهيج البشرة بعد التقشير '
+    },
+    {
+        imgSrc: 'imgs/oil.jpg',
+        title: 'فوائد زيت اللوز المر للوجه'
+    },
+    {
+        imgSrc: 'imgs/sero.jpg',
+        title: 'السبيرولينا للوجه: فوائد ووصفات'
+    },
+    {
+        imgSrc: 'imgs/limon.jpg',
+        title: 'أضرار الليمون للبشرة'
+    },
+    {
+        imgSrc: 'imgs/milk.jpg',
+        title: 'فوائد الحليب مع العسل'
+    }
+]
+function displaySkinCareData() {
+    let container = ``
+    skinCareArray.map((info) => container += ` <div class="col-lg-4 col-md-6 mb-4">
+    <div class="diet-items">
+        <img src=${info.imgSrc} class="w-100 rounded-3" alt="">
+        <h5 class="py-3">${info.title}</h5>
+    </div>
+</div>`)
+    skinCareRow.innerHTML = container
+}
+window.location.pathname === '/lifeStyle.html' ? displaySkinCareData() : ''
 // ---------------------------------------- lifeStyle end  ----------------------------------
