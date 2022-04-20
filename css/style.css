@@ -324,7 +324,7 @@ body {
     background: rgba(255,255,255,.85);
 	transition: all 0.3s;
 }
-.lifeStytle-layer h3{
+.lifeStytle-layer h4{
 	color: #567272;
 }
 .lifeStyle-items{
@@ -334,5 +334,20 @@ body {
 .lifeStyle-items:hover .lifeStytle-layer{
 	top: 0;
 }
-
+#lifeStyle .title h2 {
+    color: #44d3a0;
+}
+#lifeStyle .title h2::after {
+	background-color: #44d3a0;
+}
+#lifeStyle .title h2::before {
+	background-color: #44d3a0;
+}
 /* ------------------------- lifeStytle End --------------------------*/
+
+/* -------------------------    diet Start ---------------------------*/
+.diet-items h5{
+	border-bottom: #44d3a0 2px solid;
+	color: #383e49;
+}
+/* -------------------------    diet End   --------------------------*/

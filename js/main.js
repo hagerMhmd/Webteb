@@ -4,7 +4,9 @@ let searchIcon = document.querySelector('#searchIcon'),
     sugery = document.querySelector('#Sugery'),
     baby = document.querySelector('#Baby'),
     lifeStyle = document.querySelector('#lifeStyle'),
-    lifeStyleRow = document.querySelector('#lifeStyleRow')
+    lifeStyleRow = document.querySelector('#lifeStyleRow'),
+    dietRow = document.querySelector('#dietRow'),
+    skinCareRow = document.querySelector('#skinCareRow')
 console.log(lifeStyleRow);
 
 
@@ -94,10 +96,7 @@ function displayData() {
     myRow.innerHTML = container
     console.log(index);
 }
-if (window.location.pathname == '/sugery.html') {
-    displayData()
-}
-console.log(window.location.pathname);
+window.location.pathname == '/sugery.html' ? displayData() : ''
 
 let clickedItem = Array.from(document.querySelectorAll('.surgey-layer')),
     lightBoxContainer = document.querySelector('#lightBoxContainer'),
@@ -129,24 +128,21 @@ function closeModal() {
         lightBoxContainer.style.display = 'none'
     })
 }
-if (window.location.pathname == '/sugery.html') {
-lightBoxContainer.addEventListener(`click`, function (e) {
+window.location.pathname == '/sugery.html' ? lightBoxContainer.addEventListener(`click`, function (e) {
     if (e.target == lightBoxContainer) {
         lightBoxContainer.style.display = 'none'
     }
-})
-}
+}) : ''
+// ------------------------------------------- Sugery end ----------------------------------
 
-// --------------------------------------------- Sugery end ----------------------------------
-
-// -------------------------------------------- baby Start  -----------------------------------
+// ----------------------------------------- baby Start  -----------------------------------
 
 baby.addEventListener('click', function name() {
     goTo('/baby.html')
 })
-// -------------------------------------------- baby end    -----------------------------------
+// ------------------------------------------ baby end    -----------------------------------
 
-// ---------------------------------------- lifeStyle start  ----------------------------------
+// -------------------------------------- lifeStyle start  ----------------------------------
 lifeStyle.addEventListener('click', function name() {
     goTo('/lifeStyle.html')
 })
@@ -178,17 +174,54 @@ let lifeStyleArray = [
 ]
 function displayLifeStyleData() {
     let container = ``
-    lifeStyleArray.map((info) => container += `  <div class="col-lg-2">
+    lifeStyleArray.map((info) => container += `<div class="col-lg-2 col-sm-6 col-md-4 mb-4">
     <div class="lifeStyle-items position-relative">
         <img src=${info.imgSrc} class="w-100" alt="">
         <div class="lifeStytle-layer position-absolute d-flex justify-content-center align-items-center">
-            <h3 class="py-3 px-2">${info.title}</h3>
+            <h4 class="py-3 px-2">${info.title}</h4>
         </div>
     </div>
 </div>`)
     lifeStyleRow.innerHTML = container
 }
-if(window.location.pathname === '/lifeStyle.html'){
-    displayLifeStyleData()
+window.location.pathname === '/lifeStyle.html' ? displayLifeStyleData() : ''
+
+let dietArray = [
+    {
+        imgSrc: 'imgs/greentea.jpg',
+        title: 'طريقة شرب الشاي الأخضر للتنحيف'
+    },
+    {
+        imgSrc: 'imgs/alarm.jpg',
+        title: 'ثبات الوزن في الصيام المتقطع '
+    },
+    {
+        imgSrc: 'imgs/fork.jpg',
+        title: 'أنواع اضطراب الأكل'
+    },
+    {
+        imgSrc: 'imgs/fruits.jpg',
+        title: 'معدل الحرق الطبيعي للنساء'
+    },
+    {
+        imgSrc: 'imgs/diet1.jpg',
+        title: 'تنحيف البطن بالزنجبيل'
+    },
+    {
+        imgSrc: 'imgs/plate.jpg',
+        title: 'نظام عجز السعرات'
+    }
+]
+function displayDietData() {
+    let container = ``
+    dietArray.map((info) => container += ` <div class="col-lg-4 col-md-6 mb-4">
+    <div class="diet-items">
+        <img src=${info.imgSrc} class="w-100 rounded-3" alt="">
+        <h5 class="py-3">${info.title}</h5>
+    </div>
+</div>`)
+    dietRow.innerHTML = container
 }
+window.location.pathname === '/lifeStyle.html' ? displayDietData() : ''
+
 // ---------------------------------------- lifeStyle end  ----------------------------------

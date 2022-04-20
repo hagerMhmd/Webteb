@@ -20,167 +20,171 @@
 </head>
 
 <body>
-    <!-------------------------- NAV START ------------------------------->
-    <nav class="navbar navbar-expand-lg">
-        <div class="container-fluid">
-            <button class="navbar-toggler navbar-light bg-light" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link pe-3 active text-white" id="Sugery" aria-current="page" href="#">طب و
-                            جراحة</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pe-3 text-white border-end" id="lifeStyle" aria-current="page" href="#">الصحة و الجمال</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pe-3 text-white border-end" id="Baby" aria-current="page" href="#">الحمل و
-                            الولادة</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pe-3 text-white border-end" aria-current="page" href="#">الامراض</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pe-3 text-white border-end" aria-current="page" href="#">الادوية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link pe-3 text-white border-end" aria-current="page" href="#">السعرات الحرارية</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link corona-color pe-3 border-end" aria-current="page" href="#">
-                            <i class="fa-solid fa-circle fa-beat-fade"></i>
-                            مستجدات عن فيروس كورونا</a>
-                    </li>
-                </ul>
-            </div>
-            <div class="search-bar ms-3 d-flex position-relative overflow-hidden">
-                <!-- <input id="searchInput" type="text" class="end-0" placeholder="ابحث في ويب طب"> -->
-                <form action="/index.html" method="get" role="search">
-                    <input class="end-0" placeholder="ابحث في ويب طب" type="text" name="q" id="searchInput">
-                </form>
-                <div id="iconContainer" class="search-icon position-static start-0">
-                    <i id="searchIcon" class="fa-solid fa-magnifying-glass ms-2 fs-4 rounded-pill text-info"> </i>
+    <main id="sugery">
+        <!-------------------------- NAV START ------------------------------->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <button class="navbar-toggler navbar-light bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link pe-3 active text-white" id="Sugery" aria-current="page" href="#">طب و
+                                جراحة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pe-3 text-white border-end" id="lifeStyle" aria-current="page"
+                                href="#">الصحة و الجمال</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pe-3 text-white border-end" id="Baby" aria-current="page" href="#">الحمل
+                                و
+                                الولادة</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pe-3 text-white border-end" aria-current="page" href="#">الامراض</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pe-3 text-white border-end" aria-current="page" href="#">الادوية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link pe-3 text-white border-end" aria-current="page" href="#">السعرات
+                                الحرارية</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link corona-color pe-3 border-end" aria-current="page" href="#">
+                                <i class="fa-solid fa-circle fa-beat-fade"></i>
+                                مستجدات عن فيروس كورونا</a>
+                        </li>
+                    </ul>
                 </div>
+                <div class="search-bar ms-3 d-flex position-relative overflow-hidden">
+                    <!-- <input id="searchInput" type="text" class="end-0" placeholder="ابحث في ويب طب"> -->
+                    <form action="/index.html" method="get" role="search">
+                        <input class="end-0" placeholder="ابحث في ويب طب" type="text" name="q" id="searchInput">
+                    </form>
+                    <div id="iconContainer" class="search-icon position-static start-0">
+                        <i id="searchIcon" class="fa-solid fa-magnifying-glass ms-2 fs-4 rounded-pill text-info"> </i>
+                    </div>
+                </div>
+                <img src="imgs/webteb.png" alt="">
             </div>
-            <img src="imgs/webteb.png" alt="">
-        </div>
-    </nav>
-    <!---------------------------- NAV END ------------------------------->
-    <div class="gcse-searchresults-only"></div>
-    <!-- ---------------------------- AD START  -------------------------->
-    <div class="container px-3 px-lg-5 mt-4 text-start mb-4">
-        <div class="ad-container">
-            <div class="clearfix">
-                <img src="imgs/icon.png" class="img-fluid float-start" alt="">
-                <img src="imgs/icon.png" class="float-start" alt="">
-            </div>
-            <div class="px-3 py-4">
-                <div class="container bg-white py-4 w-75 shadow rounded">
-                    <h3 class="pt-4">Bluehost® Web Hosting</h3>
-                    <p class="mb-5">Bluehost has everything you need to build, host and promote your website. Start
-                        Today</p>
-                    <div class="ad-footer">
-                        <button class="px-4 btn btn-primary float-end">Open</button>
-                        <span>Bluehost®</span>
+        </nav>
+        <div class="gcse-searchresults-only"></div>
+        <!------------------------- NAV END ------------------------------->
+
+        <!-- ------------------------- AD START  -------------------------->
+        <div class="container px-3 px-lg-5 mt-4 text-start mb-4">
+            <div class="ad-container">
+                <div class="clearfix">
+                    <img src="imgs/icon.png" class="img-fluid float-start" alt="">
+                    <img src="imgs/icon.png" class="float-start" alt="">
+                </div>
+                <div class="px-3 py-4">
+                    <div class="container bg-white py-4 w-75 shadow rounded">
+                        <h3 class="pt-4">Bluehost® Web Hosting</h3>
+                        <p class="mb-5">Bluehost has everything you need to build, host and promote your website. Start
+                            Today</p>
+                        <div class="ad-footer">
+                            <button class="px-4 btn btn-primary float-end">Open</button>
+                            <span>Bluehost®</span>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- ---------------------------- AD END  -------------------------->
+        <!-- -------------------------- AD END  -------------------------->
 
-    <!-- --------------------------- SUGERY START ----------------- -->
-    <div class="container">
-        <div class="title mb-4">
-            <h1 class="text-center">طب و صحة</h1>
+        <!-- --------------------------- SUGERY START ----------------- -->
+        <div class="container">
+            <div class="title mb-4">
+                <h1 class="text-center">طب و صحة</h1>
+            </div>
+            <div id="myRow" class="row">
+            </div>
         </div>
-        <div id="myRow" class="row">
+        <!-- --------------------------- SUGERY END ------------------- -->
+        <!-- ----------------------- LightBox Start ------------------- -->
+        <div id="lightBoxContainer">
+            <div id="lightBoxItem">
+            </div>
         </div>
-    </div>
-    <!-- --------------------------- SUGERY END ------------------- -->
+        <!-- ----------------------- LightBox Start ------------------- -->
 
-    <div id="lightBoxContainer">
-        <div id="lightBoxItem">
-        </div>
-    </div>
-
-
-    <!-- --------------------------- BODY START ------------------- -->
-
-    <div class="container my-5">
-        <div class="title mb-4">
-            <h1 class="text-center">أجهزة جسم الإنسان </h1>
-        </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-md-6">
-                <div class="body position-relative">
-                    <img src="imgs/body3.png" class="w-100" alt="">
-                    <ul class="list-unstyled">
-                        <li><a href="" id="nervousSystem" class="text-dark">
-                                <span class="nervous-system position">الجهاز العصبي</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="text-dark">
-                                <span class="immune-system position">الجهاز المناعي</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="text-dark">
-                                <span class="gastrointestinal-tract position">الجهاز الهضمي</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="text-dark">
-                                <span class="lymphatic-system systems-width position">الجهاز اللمفاوي</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="text-dark">
-                                <span class="endocrine-system systems-width position">الغدد الصماء</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="text-dark">
-                                <span class="integumentary-system position">الجهاز اللحافي</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="text-dark">
-                                <span class="circulatory-system position">جهاز الدوران</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="text-dark">
-                                <span class="respiratory position">الجهاز التنفسي</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="text-dark">
-                                <span class="urinary-tract systems-width position">الجهاز البولي</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="text-dark">
-                                <span class="reproductive-system systems-width position">الجهاز التناسلي</span>
-                            </a>
-                        </li>
-                        <li>
-                            <a href="" class="text-dark">
-                                <span class="musculoskeletal-system position">الجهاز الهيكلي والعضلي</span>
-                            </a>
-                        </li>
-                    </ul>
+        <!-- --------------------------- BODY START ------------------- -->
+        <div class="container my-5">
+            <div class="title mb-4">
+                <h1 class="text-center">أجهزة جسم الإنسان </h1>
+            </div>
+            <div class="row justify-content-center mt-5">
+                <div class="col-md-6">
+                    <div class="body position-relative">
+                        <img src="imgs/body3.png" class="w-100" alt="">
+                        <ul class="list-unstyled">
+                            <li><a href="" id="nervousSystem" class="text-dark">
+                                    <span class="nervous-system position">الجهاز العصبي</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark">
+                                    <span class="immune-system position">الجهاز المناعي</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark">
+                                    <span class="gastrointestinal-tract position">الجهاز الهضمي</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark">
+                                    <span class="lymphatic-system systems-width position">الجهاز اللمفاوي</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark">
+                                    <span class="endocrine-system systems-width position">الغدد الصماء</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark">
+                                    <span class="integumentary-system position">الجهاز اللحافي</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark">
+                                    <span class="circulatory-system position">جهاز الدوران</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark">
+                                    <span class="respiratory position">الجهاز التنفسي</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark">
+                                    <span class="urinary-tract systems-width position">الجهاز البولي</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark">
+                                    <span class="reproductive-system systems-width position">الجهاز التناسلي</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="text-dark">
+                                    <span class="musculoskeletal-system position">الجهاز الهيكلي والعضلي</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
-    <!-- --------------------------- BODY END ------------------- -->
-
+        <!-- --------------------------- BODY END ------------------- -->
+    </main>
 
 
     <!------------ Boostrap script file ------------->
